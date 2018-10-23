@@ -23,7 +23,7 @@ class GoogleQueryFilter extends ProcessorFilter
 
   function getArguments()
   {
-    return array('query');
+    return array('query' => 'Text query');
   }
 
   public function getSettingsForm($controller)
@@ -35,7 +35,7 @@ class GoogleQueryFilter extends ProcessorFilter
       ))
       ->add('setting_nb_pages', TextType::class, array(
         'required' => false,
-        'label' => $controller->get('translator')->trans('Numbner of pages'),
+        'label' => $controller->get('translator')->trans('Number of pages'),
       ))
       ->add('ok', SubmitType::class, array('label' => $controller->get('translator')->trans('OK')));
     return $formBuilder;
