@@ -1,0 +1,20 @@
+{
+  "name": "louisicard/ads-google-query",
+  "type": "symfony-bundle",
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/symfony": "3.0.*",
+    "coretechs/ctsearch": "dev-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "LouisSicard\\GoogleQuery\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/louisicard/ctsearch"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+services:
+  ads.filter.googlequeryfilter:
+    class: LouisSicard\GoogleQuery\Processor\GoogleQueryFilter
+    tags:
+      - { name: ctsearch.filter }
